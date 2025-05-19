@@ -1,4 +1,4 @@
-const apiKey = 'c1f9dd99cd9a09b9a734c6f3131c378d'; // sua chave da OpenWeather
+const apiKey = 'c1f9dd99cd9a09b9a734c6f3131c378d'; 
 
 async function getAirQuality() {
   const city = document.getElementById('city').value;
@@ -9,7 +9,7 @@ async function getAirQuality() {
     return;
   }
 
-  // 1. Buscar latitude e longitude
+  
   const geoUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${apiKey}`;
   const geoRes = await fetch(geoUrl);
   const geoData = await geoRes.json();
@@ -21,7 +21,7 @@ async function getAirQuality() {
 
   const { lat, lon } = geoData[0];
 
-  // 2. Buscar dados de poluição
+  
   const airUrl = `https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${apiKey}`;
   const airRes = await fetch(airUrl);
   const airData = await airRes.json();
@@ -87,7 +87,7 @@ function recomendacaoSaude(aqi) {
   return '🛑 Situação crítica: Evite sair sem necessidade.';
 }
 
-// Função para alternar entre os temas claro e escuro
+
 document.getElementById('theme-toggle').addEventListener('click', () => {
   document.body.classList.toggle('light-theme');
   document.querySelector('.container').classList.toggle('light-theme');
