@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Qualidade do Ar</title>
+    <link rel="stylesheet" href="style.css"> <!-- Certifique-se de que o arquivo style.css está no mesmo diretório -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Se você usar gráficos mais tarde -->
+</head>
+<body>
+
+    <div class="container">
+        <h1>Verifique a Qualidade do Ar</h1>
+        <input type="text" id="city" placeholder="Digite sua cidade ou bairro">
+        <button onclick="getAirQuality()">Verificar Qualidade do Ar</button>
+
+        <div id="result"></div> <!-- Resultado será exibido aqui -->
+    </div>
+
+    <!-- Botão de alternância de tema -->
+    <button id="theme-toggle">🌙 / 🌞</button>
+
+    <script src="script.js"></script> <!-- Seu arquivo JavaScript -->
+</body>
+</html>
