@@ -1,4 +1,4 @@
-/* Tema padrão (escuro) */
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #121212;
@@ -51,7 +51,7 @@ button {
 
 button:hover {
   background: #00cc77;
-  transform: scale(1.1); /* Aumento ao passar o mouse */
+  transform: scale(1.1); 
 }
 
 #result {
@@ -62,7 +62,7 @@ button:hover {
   border-radius: 10px;
 }
 
-/* Tema claro */
+
 body.light-theme {
   background-color: #ffffff;
   color: #333;
@@ -90,7 +90,7 @@ button.light-theme:hover {
   background-color: #f9f9f9;
 }
 
-/* Botão de alternância de tema */
+
 #theme-toggle {
   position: fixed;
   top: 20px;
@@ -105,8 +105,8 @@ button.light-theme:hover {
   transition: background-color 0.3s, transform 0.2s ease-in-out;
 }
 
-/* Animação no botão de alternância de tema */
+
 #theme-toggle:hover {
   background-color: #00cc77;
-  transform: scale(1.1); /* Aumento ao passar o mouse */
+  transform: scale(1.1); 
 }
